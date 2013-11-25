@@ -1,0 +1,5 @@
+# dit bestand zorgt ervoor dat alle bestanden in de 'bin' en 'obj'
+# map worden genegeerd
+
+**/bin/**
+**/obj/**
