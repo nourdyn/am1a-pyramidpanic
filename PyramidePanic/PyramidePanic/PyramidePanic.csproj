@@ -116,7 +116,7 @@
     <Compile Include="Input\Input.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Game\Program.cs" />
-    <Compile Include="Game\Game1.cs" />
+    <Compile Include="Game\PyaramidPanic.cs" />
     <Compile Include="GameScenes\StartScene\StartScene.cs" />
   </ItemGroup>
   <ItemGroup>
