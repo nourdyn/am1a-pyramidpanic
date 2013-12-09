@@ -39,6 +39,13 @@ namespace PyramidePanic
 
         #region properties
 
+        // propertie image
+        public SpriteBatch Spritebatch
+
+        {
+            get { return this.spriteBatch; }
+        }
+
         // propertie startscene
         public StartScene StartScene
         {
@@ -139,16 +146,16 @@ namespace PyramidePanic
             // roep de draw methode aan van start scene 
             // voor een spritebatch instantie iets kan tekenen de begin() methode
             this.spriteBatch.Begin();
-            //roep de draw methode aan van de startscene class
+
+            // de draw methode van het object dat toegewezen is aan het interface-object
+            // this.istat word aangeroepen 
+            this.iState.Draw(gameTime);
            
-            this.startScene.Draw(gameTime);
             
             // nadat de spritebatch.draw() is aangeroepen moet de end() methode van
             // de spritebatch class worden aangeroepen 
             this.spriteBatch.End();
-            // de draw methode van het object dat toegewezen is aan het interface-object
-            // this.istat word aangeroepen 
-            this.iState.Draw(gameTime);
+            
             base.Draw(gameTime);
         }
     }
